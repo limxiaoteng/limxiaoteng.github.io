@@ -17,7 +17,7 @@
 <body>
     <div id="map"></div>
     <script>
-        var map = L.map('map').setView([2.592404, 102.813739],12);
+        var map = L.map('map').setView([2.532404, 102.813739],14);
 
         L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=VksPqzDlKZaFbTg7Ej0g', {
             attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
@@ -28,7 +28,7 @@
          marker.bindPopup(
             '<b><h1>我的家乡</h1></b><h2>马来西亚&nbsp;柔佛州&nbsp;昔加末县</h2><h3>昔加末是马来西亚柔佛州西北端一县。主要生产橡胶和油棕，它生产的榴莲闻名马来西亚及新加坡。此外，它位于铁路及公路线上，且接近彭亨、森美兰与马六甲三州。所以，三州与柔佛之间的客货运输在此集散。二十世纪八十年代着手发展劳动密集型工业，城市日益发展。</h3><div><a href="https://zh.wikipedia.org/wiki/%E6%98%94%E5%8A%A0%E6%9C%AB"><h4>更多信息见维基百科</a></h4> </div><div><img style="width:100%" src="https://www.johornow.com/wp-content/uploads/2016/04/segamat-1.jpg"  </div>'
            );
-
+          marker.openPopup();
     </script>
 </body>
 </html>
